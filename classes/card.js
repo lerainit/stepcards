@@ -1,10 +1,12 @@
 
 import getCards from "../functions/getCards.js";
+import instance from "../functions/instance.js";
 
 
 class Card{
-constructor(name,doctor,purpose,description,urgency){
+constructor(id,name,doctor,purpose,description,urgency){
 this._purpose = purpose;
+this._id = id
 this._description = description;
 this._urgency = urgency;
 this._name = name;
@@ -50,7 +52,17 @@ if(showMore){showMore.remove()}
     `)
 
 })
+this.deleteBtn.addEventListener('click',()=>{
+    console.log(this._id)
 
+   const deleteCard = async ()=>{
+        const result = await instance.delete(`/${this._id}`)
+        console.log(result)
+    }
+    deleteCard()
+
+  this.cardContainer.remove()  
+})
 }
 render(selector){
 this.createElements()
