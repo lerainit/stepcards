@@ -21,7 +21,9 @@ logOutBtn.addEventListener('click',() =>{
  
 })
 
-
+//
+//localStorage.setItem('lera','lera')
+//localStorage.setItem('lera',1234)
 
 const container = document.querySelector('.container')
 
@@ -31,11 +33,23 @@ new createCard().render('.container')
     
 }
 
+function createLogin(){
 
+
+   const login = new Login()
+
+ // loginBtn.removeEventListener('click',createLogin)
+login.render('.container')
+
+login.submitLogin() 
+
+//loginBtn.addEventListener('click',createCards)
+}
+*/
 loginBtn.addEventListener('click', createLogin)
 
 
-
+//new Card('Иван Иванов','терапевт','обследование','боль в желудке','срочно').render('.container')
 
 const urgencySelect = document.querySelector('.visit_select')
 
