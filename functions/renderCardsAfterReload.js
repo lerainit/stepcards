@@ -15,7 +15,7 @@ function renderCardsAfterReload(){
     
       
       
-         new Card(el.name,el.doctor,el.purpose,el.description,el.urgency).render('.container')
+         new Card(el.id,el.name,el.doctor,el.purpose,el.description,el.urgency).render('.container')
       })
       const loginBtn = document.querySelector('.login_btn')
     loginBtn.innerHTML = 'Cоздать новую карту'
