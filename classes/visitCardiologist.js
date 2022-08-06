@@ -35,13 +35,13 @@ const createCard = async () =>{
    
     const {status,data} =  await instance.post('',{doctor:'cardiologist',name:input[2].value,age:input[6].value,pressure:input[3].value,weight:input[4].value,purpose:input[0].value,description:input[1].value,urgency: document.querySelector('.visit_select').selectedIndex })
        console.log(data)
-    
+       new Card(data.id,data.name,data.doctor,data.purpose,data.description,data.urgency).render('.container')
    }
   createCard() 
  
     
        
-           new Card('',input[2].value,'cardiologist',input[0].value,input[1].value,document.querySelector('.visit_select').selectedIndex).render('.container')
+       
         
       })
   
