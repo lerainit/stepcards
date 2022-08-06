@@ -41,7 +41,7 @@ const createCard = async () =>{
  
     
        
-           new Card(input[2].value,'cardiologist',input[0].value,input[1],document.querySelector('.visit_select').selectedIndex).render('.container')
+           new Card('',input[2].value,'cardiologist',input[0].value,input[1].value,document.querySelector('.visit_select').selectedIndex).render('.container')
         
       })
   
