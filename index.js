@@ -21,9 +21,7 @@ logOutBtn.addEventListener('click',() =>{
  
 })
 
-//
-//localStorage.setItem('lera','lera')
-//localStorage.setItem('lera',1234)
+
 
 const container = document.querySelector('.container')
 
@@ -33,19 +31,7 @@ new createCard().render('.container')
     
 }
 
-function createLogin(){
 
-
-   const login = new Login()
-
- // loginBtn.removeEventListener('click',createLogin)
-login.render('.container')
-
-login.submitLogin() 
-
-//loginBtn.addEventListener('click',createCards)
-}
-*/
 loginBtn.addEventListener('click', createLogin)
 
 
