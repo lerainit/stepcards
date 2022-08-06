@@ -49,7 +49,7 @@ login.submitLogin()
 loginBtn.addEventListener('click', createLogin)
 
 
-new Card('Иван Иванов','терапевт','обследование','боль в желудке','срочно').render('.container')
+
 
 const urgencySelect = document.querySelector('.visit_select')
 
